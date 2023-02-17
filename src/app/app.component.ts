@@ -18,10 +18,10 @@ export class AppComponent {
   deleteStudent(index:number){
     this.data.splice(index,1)
   }
-  updateStudent(index:number){
-    this.data[index].name=name.value,
-    this.data[index].balance=balance.value
-    this.data[index].details=details.value
-  }
+  // updateStudent(index:number){
+  //   this.data[index].name=name.value,
+  //   this.data[index].balance=balance.value
+  //   this.data[index].details=details.value
+  // }
 
 }
