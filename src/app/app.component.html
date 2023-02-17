@@ -1,0 +1,43 @@
+<div class="studentdetails">
+    <form >
+        <label for="name">Name:</label>  
+
+        <input type="text" name="name" id="name" placeholder="Enter the Students names">
+        <label for="feesbalance">School Fess Balance:</label>
+        <input type="text" id="feesbalance" placeholder="Enter the School fess Balance ">
+        <button (click)="addStudent(name,balance,details)" >Add Student</button>
+
+    </form>
+   </div>
+   <div *ngIf="data.length>0 ; else nodata ">
+ <div class="studentes" *ngFor="let student of data" >
+    <h1>{{student.name}}</h1>
+    <p>{{student.balance}}</p>
+    <p>{{student.details}}</p>
+    <button onclick="deleteStudent()">Delete</button>
+    <button onclick="updateStudent()"></button>
+
+    <h1>simon muturi</h1>
+    <p>2000</p>
+    <p>captain</p>
+    
+
+    <h1>simon muturi</h1>
+    <p>2000</p>
+    <p>captain</p>
+
+
+    <h1>simon muturi</h1>
+    <p>2000</p>
+    <p>captain</p>
+
+    <h1>simon muturi</h1>
+    <p>2000</p>
+    <p>captain</p>
+
+    <h1>simon muturi</h1>
+    <p>2000</p>
+    <p>captain</p>
+ </div>
+   </div>
+<ng-template #nodata> <p>Enter Students</p></ng-template>

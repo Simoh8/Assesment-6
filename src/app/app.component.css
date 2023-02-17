@@ -1,0 +1,17 @@
+form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    gap: 10px;
+
+}
+input{
+    height: 4rem;
+
+}
+button{
+    height: 3rem;
+    width: fit-content;
+    align-self: center;
+}
