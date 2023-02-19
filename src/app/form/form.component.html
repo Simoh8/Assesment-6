@@ -1,0 +1,28 @@
+<div class="todos" *ngFor="let todo of todos; let i=index">
+    <h1>A TODO APP IN ANGULAR</h1>
+
+
+    <label for="name">Enter The Title Of The Task </label><br>
+    <input title= "ngModel" required minlength="2", maxlength="20" type="text" #title placeholder="Enter Here" ngModel><br>
+
+    <label for="name">Enter The Description Of The Task </label><br>
+    <input type="text" #description placeholder="Enter Here" ngModel><br>
+
+    <label for="name">Enter The Stat Date Of The Task </label><br>
+    <input type="date" #startdate placeholder="Enter Here" ngModel><br>
+
+    <button type="submit" class="saveTodo">SAVE TASK</button>
+    <!-- (click)="(title,description,startdate)" -->
+
+    <div class="singlleTodo">
+       <p>Title: {{title}}</p> 
+        <p>Task Description: {{description}}</p>
+       <p>Start Date: {{startdate}}</p>
+       <button >Delete Task</button>
+    </div>
+
+
+
+
+
+</div>

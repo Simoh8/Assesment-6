@@ -8,12 +8,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Assesment6';
 
-  data:{name:string,balance:string,details:string}[]=[]
+  data:{name:string,balance:string,details:string }[]=[]
 
 
-  addStudent(name:HTMLInputElement,balance:HTMLInputElement,details:HTMLInputElement){
+  addStudent(name:HTMLInputElement,balance:HTMLInputElement,details:HTMLInputElement,desc='Single student'){
 
-    this.data.push({name:name.value,balance:balance.value,details:details.value})
+    this.data.push({name:name.value,balance:balance.value,details:details.value,})
   }
   deleteStudent(index:number){
     this.data.splice(index,1)

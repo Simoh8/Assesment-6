@@ -1,0 +1,25 @@
+div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 50%;
+    margin: auto;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+label{
+    font-weight: bold;
+}
+input{
+    height: 1rem;
+    padding: 20px;
+}
+button{
+    align-self: center;
+    width: 7rem;
+    height: 2rem;
+    border-radius: 5px;
+}
+div h1{
+    align-self: center;
+}
